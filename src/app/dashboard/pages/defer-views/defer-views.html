@@ -13,7 +13,7 @@
     </p>
   }
 
-  @defer {
+  @defer (on idle) {
     <heavy-loader-slow cssClass="bg-green-500" />
   } @placeholder {
     <p class="h-[150] w-full bg-linear-to-r from-gray-200 to-gray-400 animate-pulse">
@@ -21,7 +21,7 @@
     </p>
   }
 
-  @defer {
+  @defer (on viewport) {
     <heavy-loader-slow cssClass="bg-purple-500" />
   } @placeholder {
     <p class="h-[150] w-full bg-linear-to-r from-gray-200 to-gray-400 animate-pulse">
