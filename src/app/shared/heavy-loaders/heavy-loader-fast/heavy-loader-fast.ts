@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'heavy-loader-fast',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   templateUrl: './heavy-loader-fast.html',
 })
 export class HeavyLoaderFast {
-
+  cssClass = input<string>();
 }
