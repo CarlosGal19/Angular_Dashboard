@@ -36,9 +36,14 @@ export const routes: Routes = [
         loadComponent: () => import('./dashboard/pages/users/users').then(c => c.Users)
       },
       {
-        path: 'view-transition',
-        title: 'View transition',
-        loadComponent: () => import('./dashboard/pages/view-transition/view-transition').then(c => c.ViewTransition)
+        path: 'view-transition-1',
+        title: 'View transition 1',
+        loadComponent: () => import('./dashboard/pages/view-transition/view-transition_1').then(c => c.ViewTransition1)
+      },
+      {
+        path: 'view-transition-2',
+        title: 'View transition 2',
+        loadComponent: () => import('./dashboard/pages/view-transition/view-transition_2').then(c => c.ViewTransition2)
       },
       {
         path: '**',
